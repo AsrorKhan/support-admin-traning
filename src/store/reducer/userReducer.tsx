@@ -10,7 +10,7 @@ interface UserState {
 
 const initialState: UserState = {
   users: {
-    isAuth: false,
+    isAuth: true,
     access_token: '',
     refresh_token: '',
     scope: [],

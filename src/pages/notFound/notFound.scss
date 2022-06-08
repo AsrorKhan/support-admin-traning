@@ -1,0 +1,13 @@
+.not-found-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title{
+    color: red;
+    font-size: 30px;
+  }
+  &__desc {
+    color: teal;
+    font-size: 15px;
+  }
+}
