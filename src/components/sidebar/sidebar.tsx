@@ -1,19 +1,36 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { Layout, Menu, Switch } from 'antd';
 import { menuLinks } from '../../utils/constants/menuLink';
 import AppRoutes from '../../routes/appRoutes';
+import './sidebar.scss';
+
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
-const SiderComponent = () => {
+export const SidebarComponent = () => {
   const [collapsed, setCollapsed] = useState(false);
+  const [mode, setMode] = useState<'vertical' | 'inline'>('vertical');
+  const [collapseMenu, setCollapseMenu] = useState(true);
+
+  const changeMode = (value: boolean) => {
+    setMode(value ? 'vertical' : 'inline');
+  };
+
+  const collapseMenuItems = () => {
+    setCollapseMenu(!collapseMenu);
+  };
   return (
     <Layout>
       <Sider
         className='sidebar fixed-sidebar'
         breakpoint='lg'>
-        <Menu>
+
+
+        <Menu className='menu' mode='inline'>
+          <Link className='sidebar sidebar-menu' to='/main' >
+            Support Admin
+          </Link>
+          {/*<Switch onChange={collapseMenuItems} />*/}
           {
             menuLinks?.map((item) => {
               if (item.link !== null) {
@@ -27,8 +44,19 @@ const SiderComponent = () => {
                 );
               } else {
                 return (
-                  <SubMenu key={item.link} icon={item.icon} title={item.label}>
-                    
+                  <SubMenu key={item.label} icon={item.icon} title={item.label}>
+                    {
+                      item.items!.map(i => {
+                        return (
+                          <Menu.Item key={i.label}>
+                            <Link to={i.link}>
+                              {i.icon} &nbsp;
+                              {i.label}
+                            </Link>
+                          </Menu.Item>
+                        );
+                      })
+                    }
                   </SubMenu>
                 );
               }
@@ -37,12 +65,10 @@ const SiderComponent = () => {
         </Menu>
       </Sider>
       <Layout>
-        <Header>Header</Header>
-        <AppRoutes/>
+        <Header className='header-component'></Header>
+        <AppRoutes />
       </Layout>
     </Layout>
   );
 };
-
-export default SiderComponent;
 

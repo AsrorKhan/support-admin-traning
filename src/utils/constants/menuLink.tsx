@@ -1,41 +1,38 @@
-import { ApartmentOutlined, FormOutlined, TeamOutlined } from '@ant-design/icons';
+import {
+  ApartmentOutlined,
+  ControlOutlined,
+  SettingOutlined,
+  TeamOutlined,
+  UserOutlined,
+  UserSwitchOutlined,
+  AppstoreOutlined,
+} from '@ant-design/icons';
 
 export const menuLinks = [
   {
     key: 1,
-    label: 'Admins',
-    link: '/admins',
-    icon: <ApartmentOutlined />,
-    items: [
-      {
-        label: 'admin1',
-        link: '/admin',
-        permission: ''
-      },
-      { 
-        label: 'admin2',
-        link: '/admin',
-        permission: ''
-      }
-    ],
+    label: 'Home',
+    link: '/main',
+    icon: <AppstoreOutlined/>,
+    items: null,
     permission: ''
   },
   {
     key: 2,
-    label: 'Users',
-    link: '/users',
-    icon: <TeamOutlined />,
+    label: 'Admins',
+    link: null,
+    icon: <ApartmentOutlined />,
     items: [
       {
-        label: 'user1',
-        link: '',
-        icon: '',
+        label: 'admin1',
+        link: '/admins',
+        icon: <UserSwitchOutlined />,
         permission: ''
       },
       {
-        label: 'user2',
-        link: '',
-        icon: '',
+        label: 'admin2',
+        link: '/admins',
+        icon: <UserSwitchOutlined />,
         permission: ''
       }
     ],
@@ -43,9 +40,37 @@ export const menuLinks = [
   },
   {
     key: 3,
-    label: 'Debts',
-    link: '/debts',
-    icon: <FormOutlined />,
+    label: 'Users',
+    link: null,
+    icon: <TeamOutlined />,
+    items: [
+      {
+        label: 'user1',
+        link: '/users',
+        icon: <UserOutlined />,
+        permission: ''
+      },
+      {
+        label: 'user2',
+        link: '/users',
+        icon: <UserOutlined />,
+        permission: ''
+      }
+    ],
+    permission: ''
+  },
+  {
+    key: 4,
+    label: 'Configuration',
+    link: '/configuration',
+    icon: <ControlOutlined />,
+    permission: ''
+  },
+  {
+    key: 5,
+    label: 'Settings',
+    link: '/settings',
+    icon: <SettingOutlined />,
     permission: ''
   }
 ];

@@ -2,24 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="debaef77-c2cd-4b3e-bdfd-fc3e4c721590" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/errorBoundary/errorBoundary.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/errorBoundary/errorBoundary.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/redux.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/redux.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/sider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/sidebar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/admins/admins.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admins/admins.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/notFound/notFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/notFound/notFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/users/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/appRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/appRoutes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routesConstants.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer/userReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/userReducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/menuLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/menuLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants/routeConstants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants/routeConstants.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +84,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="code.cleanup.on.save" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../$ANORBANK/autocover-ui" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -117,7 +115,11 @@
       <workItem from="1654489293641" duration="11355000" />
       <workItem from="1654502954778" duration="8520000" />
       <workItem from="1654575658397" duration="19966000" />
-      <workItem from="1654661657572" duration="16902000" />
+      <workItem from="1654661657572" duration="16932000" />
+      <workItem from="1654755075906" duration="1782000" />
+      <workItem from="1654775889652" duration="278000" />
+      <workItem from="1654776906090" duration="620000" />
+      <workItem from="1654836872937" duration="15277000" />
     </task>
     <servers />
   </component>
